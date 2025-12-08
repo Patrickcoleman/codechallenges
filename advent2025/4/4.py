@@ -16,6 +16,9 @@ for line in input:
     line = str(line).strip()
     ind = []
     for char in line:
+
+
+        
         ind.append(char)
     data.append(ind)
 
