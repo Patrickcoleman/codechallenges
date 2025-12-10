@@ -104,17 +104,17 @@ for i in range(len(points) - 1):
                 #print(f"new biggest square from {points[i][0]}, {points[i][1]} to {points[j][0]}, {points[j][1]}, area: {size}")
                 best = size
 
-# matrix = [['.' for i in range(20)] for j in range(20)]
+matrix = [['.' for i in range(20)] for j in range(20)]
 
-# for x in range(20):
-#     for y in range(20):
-#         if [x, y] in points:
-#             matrix[y][x] = '#'
-#         elif [x, y] in oob_points:
-#             matrix[y][x] = 'X'
+for x in range(20):
+    for y in range(20):
+        if [x, y] in points:
+            matrix[y][x] = '#'
+        elif [x, y] in oob_points:
+            matrix[y][x] = 'X'
 
-# for i in range(20):
-#     line_string = f"{matrix[i]} \n"
-#     print(matrix[i])
+for i in range(20):
+    line_string = f"{matrix[i]} \n"
+    print(matrix[i])
 
 print(best)
